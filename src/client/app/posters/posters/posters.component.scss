@@ -1,0 +1,14 @@
+@import '../../../styles/mixin';
+
+.posters {
+  @include item-list;
+}
+
+.mat-card {
+  @include mat-card-layout;
+}
+
+.content-container {
+@include content-container-layout;
+}
+  

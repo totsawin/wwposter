@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import "mixin";
+
+html, body {
+    font-family: 'Roberto', san-serif;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+.router-link-active {
+    @include primary-background-contrast-color;
+}
+
+.page-content {
+    margin: 1em;
+}

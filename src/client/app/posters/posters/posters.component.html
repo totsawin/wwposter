@@ -1,0 +1,35 @@
+<div class="page-content">
+  <h3>Posters</h3>
+<!--   <mat-list role="list" *ngIf="posters && posters.length"> 
+    <mat-list-item role="listitem" *ngFor="let poster of posters">
+      <div>{{poster.name}}</div>
+      <div>{{poster.year}}</div>
+      <div>{{poster.director}}</div>
+      <div>{{poster.plot}}</div>
+    </mat-list-item>
+  </mat-list> -->
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Heroes</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <ul class="posters">
+        <li *ngFor="let poster of posters" class="item-container">
+          <button mat-button mat-suffix mat-icon-button color="accent" class="delete-button" aria-label="Delete"
+            matTooltip="Delete the hero">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <div class="selectable-item">
+            <div class="badge">{{poster.id}}</div>
+            <div class="item-text" >
+              <div class="name">{{poster.name}}</div>
+              <div class="saying">{{poster.plot}}</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  
+</div>
